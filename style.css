@@ -67,7 +67,7 @@ table {
   border-spacing: 0;
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4 {
     color: var(--white);
 }
 
@@ -292,9 +292,125 @@ p {
     height: 200px;
 }
 
-. {
+.complete-goal {
     padding: 54px 96px;
     background-color: var(--grey);
     display: flex;
     flex-wrap: wrap;
+}
+
+div[class^=complete-goal__step] {
+    width: 50%;
+    height: 289px;
+    box-sizing: border-box;
+    padding: 48px;
+    align-content: flex-end;
+}
+
+.complete-goal__step-01 {
+    background-image: url(./img/background-01.svg);
+}
+
+.complete-goal__step-02 {
+    background-image: url(./img/background-02.svg);
+}
+
+.complete-goal__step-03 {
+    background-image: url(./img/background-03.svg);
+}
+
+.complete-goal__step-04 {
+    background-image: url(./img/background-04.svg);
+}
+
+.step__heading {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.step__paragraph {
+    margin-top: 38px;
+    width: 276px;
+}
+
+.achive {
+    padding: 91px 96px;
+    background-color: var(--grey);
+}
+
+.achive__decoration {
+    margin: 0 0 -30px 495px;
+    font-size: 48px;
+    letter-spacing: -10px;
+}
+
+.achive__objectives {
+    display: flex;
+    margin: 83px 0 32px 0;
+}
+
+.objectives__aside {
+    display: grid;
+    align-content: space-between;
+    width: 336px;
+}
+
+.aside__year {
+    font-size: 12px;
+}
+
+.objectives__solution {
+    flex: 1;
+}
+
+.soluttion__detail {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 35px;
+}
+
+.details__paragaph-left {
+    margin-right: 100px;
+    min-width: 373px;
+}
+
+.solution__table {
+    height: 336px;
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid var(--white);
+}
+
+.row__sphere {
+    height: 145px;
+    border: 2px solid var(--white);
+    padding-left: 50px;
+    vertical-align: middle;
+}
+
+.row__explanation {
+    border: 2px solid var(--white);
+    padding: 36px 50px 50px 50px;
+    vertical-align: middle;
+}
+
+.explanation__heading {
+    margin-bottom: 19px;
+    font-size: 30px;
+}
+
+.achive__summary {
+    margin-left: 336px;
+    width: 40%;
+}
+
+.final {
+    background-image: url(./img/final_back.svg);
+    background-repeat: no-repeat;
+    padding: 84px 178px 64px 94px;
+    box-sizing: border-box;
+}
+
+.final__subheading {
+    font-size: 12px;
 }
