@@ -10,67 +10,6 @@
     --color-4: #c2e9cd;
 }
 
-/* Сброс всех стилей селектов по умолчанию */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-  
-body {
-  line-height: 1;
-}
-  
-ol, ul {
-  list-style: none;
-}
-
-a:active, 
-a:hover,  
-a {
-  text-decoration: none;
-  color: var(--white);
-}
-  
-blockquote, q {
-  quotes: none;
-}
-  
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-  
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-h1, h2, h3, h4 {
-    color: var(--white);
-}
-
 /* Шрифт 1 */
 .unbounded-font, h1 { 
     font-family: "Unbounded", serif;
@@ -108,7 +47,7 @@ p {
 }
 
 .main-page {
-    background-image: url('./img/backgroung.svg');
+    background-image: url(../img/backgroung.svg);
     background-repeat: no-repeat;
     background-size: 100vw;
     padding: 48px 95px 0 95px;
@@ -308,19 +247,19 @@ div[class^=complete-goal__step] {
 }
 
 .complete-goal__step-01 {
-    background-image: url(./img/background-01.svg);
+    background-image: url(../img/background-01.svg);
 }
 
 .complete-goal__step-02 {
-    background-image: url(./img/background-02.svg);
+    background-image: url(../img/background-02.svg);
 }
 
 .complete-goal__step-03 {
-    background-image: url(./img/background-03.svg);
+    background-image: url(../img/background-03.svg);
 }
 
 .complete-goal__step-04 {
-    background-image: url(./img/background-04.svg);
+    background-image: url(../img/background-04.svg);
 }
 
 .step__heading {
@@ -405,7 +344,7 @@ div[class^=complete-goal__step] {
 }
 
 .final {
-    background-image: url(./img/final_back.svg);
+    background-image: url(../img/final_back.svg);
     background-repeat: no-repeat;
     padding: 84px 178px 64px 94px;
     box-sizing: border-box;
@@ -413,4 +352,47 @@ div[class^=complete-goal__step] {
 
 .final__subheading {
     font-size: 12px;
+}
+
+.final__wishes {
+    margin-top: 299px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.benefits__decoration {
+    margin: 0 0 -30px 310px;
+    font-size: 48px;
+    letter-spacing: -10px;
+}
+
+.wishes__paragraph {
+    width: 350px;
+}
+
+.contact-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--grey);
+    height: 150px;
+    padding: 0 64px;
+}
+
+.contact-us__chat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+}
+
+.chat__choose {
+    display: inline-flex;
+    align-items: center;
+}
+
+.choose__img {
+    width: 20px;
+    margin-right: 20px;
 }
