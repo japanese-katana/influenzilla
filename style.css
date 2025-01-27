@@ -1,3 +1,15 @@
+:root {
+    --white: #ffffff;
+    --black: #000000; 
+    --grey: #111111;
+    --p-color: #e4e4e4;
+    --box-color: #202020;
+    --color-1: #c6f1f7;
+    --color-2: #f983e9;
+    --color-3: #b877ff;
+    --color-4: #c2e9cd;
+}
+
 /* Сброс всех стилей селектов по умолчанию */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -37,7 +49,7 @@ a:active,
 a:hover,  
 a {
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
   
 blockquote, q {
@@ -55,12 +67,12 @@ table {
   border-spacing: 0;
 }
 
-h1, h2, h3, h4 {
-    color: white;
+h1, h2, h3, h4, p {
+    color: var(--white);
 }
 
 /* Шрифт 1 */
-.unbounded-font { 
+.unbounded-font, h1 { 
     font-family: "Unbounded", serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -68,23 +80,37 @@ h1, h2, h3, h4 {
 }  
 
 /* Шрифт 2 */
-.inter-tight-font {
+.inter-tight-font, p {
     font-family: "Inter Tight", serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
 }
 
+h1 {
+    font-size: 54px;
+}
+
+p {
+    font-size: 14px;
+    color: var(--p-color);
+}
+
 /* Разноцветный текст */
-.color_text {
-    
+.color-text {
+    background: linear-gradient(78deg, 
+    var(--color-1) 0%, 
+    var(--color-2) 36%,
+    var(--color-3) 74%,
+    var(--color-4) 100%);
+    background-clip: text;
+    color: transparent;
 }
 
 .main-page {
     background-image: url('./img/backgroung.svg');
     background-repeat: no-repeat;
     background-size: 100vw;
-    height: 912px;
     padding: 48px 95px 0 95px;
 }
 
@@ -101,7 +127,7 @@ h1, h2, h3, h4 {
     flex-direction: row;
     align-items: center;
     padding: 51px 31px;
-    border: 2px solid white;
+    border: 2px solid var(--white);
 }
 
 .logo__heading {
@@ -120,7 +146,7 @@ h1, h2, h3, h4 {
 .header__menu {
     width: 817px;
     height: 131px;
-    border-top: 2px solid white;
+    border-top: 2px solid var(--white);
 }
 
 .menu__row {
@@ -131,8 +157,8 @@ h1, h2, h3, h4 {
 }
 
 .row__cell {
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
+    border-right: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
     width: 100%;
     height: 100%;
     text-align: center;
@@ -142,7 +168,7 @@ h1, h2, h3, h4 {
     font-size: 12px;
 }
 
-.main-page__founded {
+.main-page__realtime {
     margin-top: 223px;
     display: grid;
     grid-auto-flow: column;
@@ -150,13 +176,125 @@ h1, h2, h3, h4 {
     justify-content: start;
 }
 
-.founded__year {
+.realtime__year {
     font-weight: 200;
     font-size: 27px;
 }
 
-.founded__heading{
-    font-weight: 400;
+.realtime__heading{
     font-size: 12px;
     margin-left: 25px;
+}
+
+.main-page__headline {
+    margin-top: 49px;
+    margin-bottom: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.phrase__decoration {
+    font-size: 48px;
+    letter-spacing: -10px;
+    text-align: end;
+    margin-bottom: -30px;
+}
+
+.headline__invocation {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.incovation__heading {
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: -106px;
+}
+
+.headline__info {
+    width: 241px;
+}
+
+.info__heading {
+    margin-top: 21px;
+}
+
+.main-page__values {
+    height: 192px;
+    width: 100%;
+    background-color: var(--black);
+    opacity: 0.7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.values__list {
+    width: 240px;
+}
+
+.list__heading {
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.about-company {
+    background-color: var(--grey);
+    padding: 104px 96px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.founded__subheading {
+    font-size: 12px;
+    margin-bottom: 39px;
+}
+
+.founded__decoration {
+    margin: 13px 0 122px 0;
+    font-size: 48px;
+    letter-spacing: -10px;
+    text-align: start;
+}
+
+.about-company__description {
+    height: 458px;
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: -288px;
+}
+
+.description__paragraph {
+    font-weight: 300;
+}
+
+.about-company__sphere {
+    flex-grow: 1;
+    justify-items: flex-end;
+}
+
+.sphere__box {
+    background-color: var(--box-color);
+    width: 238px;
+    height: 276px;
+    justify-items: center;
+}
+
+.box__img {
+    width: 200px;
+    height: 200px;
+}
+
+. {
+    padding: 54px 96px;
+    background-color: var(--grey);
+    display: flex;
+    flex-wrap: wrap;
 }
