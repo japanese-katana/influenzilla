@@ -14,7 +14,6 @@
 .unbounded-font, 
 h1 { 
     font-family: "Unbounded", serif;
-    font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
 }  
@@ -23,7 +22,6 @@ h1 {
 .inter-tight-font, 
 p {
     font-family: "Inter Tight", serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
@@ -215,15 +213,19 @@ p {
     font-weight: 300;
 }
 
-.about-company__sphere {
-    flex-grow: 1;
-    justify-items: flex-end;
+.about-company__sphere {       
+    margin-left: auto;
 }
 
 .sphere__box {
-    justify-items: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 238px;
     height: 276px;
+    padding-bottom: 37px;
+    box-sizing: border-box;
     background-color: var(--box-color);
 }
 
