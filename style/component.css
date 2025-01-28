@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* Основные цвета */
+:root {
+    --white: #ffffff;
+    --black: #000000; 
+    --grey: #111111;
+    --p-color: #e4e4e4;
+    --box-color: #202020;
+    --color-1: #c6f1f7;
+    --color-2: #f983e9;
+    --color-3: #b877ff;
+    --color-4: #c2e9cd;
+}
+
+/* Шрифт 1 */
+.unbounded-font, 
+h1 { 
+    font-family: "Unbounded", serif;
+    font-weight: 300;
+    font-style: normal;
+}  
+
+h1 {
+    font-size: 54px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+}
+
+/* Шрифт 2 */
+.inter-tight-font, 
+p {
+    font-family: "Inter Tight", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    color: var(--p-color);
+    font-size: 14px;
+}
+
+/* Разноцветный текст */
+.color-text {
+    background: -o-linear-gradient(12deg, 
+    var(--color-1) 0%, 
+    var(--color-2) 36%,
+    var(--color-3) 74%,
+    var(--color-4) 100%);
+    background: linear-gradient(78deg, 
+    var(--color-1) 0%, 
+    var(--color-2) 36%,
+    var(--color-3) 74%,
+    var(--color-4) 100%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+}
+
+.heading-decor {
+    font-family: "Unbounded";
+    font-weight: 300;
+    font-size: 48px;
+    letter-spacing: -10px;
+}
+
+@media (max-width: 768px) {
+    .heading-decor {
+        font-size: 32px;
+        letter-spacing: -7px;
+    }
+}
