@@ -20,8 +20,17 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article, 
+aside, 
+details, 
+figcaption, 
+figure, 
+footer, 
+header, 
+hgroup, 
+menu, 
+nav, 
+section {
   display: block;
 }
   
@@ -29,7 +38,8 @@ body {
   line-height: 1;
 }
   
-ol, ul {
+ol, 
+ul {
   list-style: none;
 }
 
@@ -44,8 +54,10 @@ blockquote, q {
   quotes: none;
 }
   
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before, 
+blockquote:after,
+q:before, 
+q:after {
   content: '';
   content: none;
 }
@@ -55,7 +67,10 @@ table {
   border-spacing: 0;
 }
 
-h1, h2, h3, h4 {
+h1, 
+h2, 
+h3, 
+h4 {
   color: var(--white);
 }
 

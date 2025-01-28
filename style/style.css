@@ -11,7 +11,8 @@
 }
 
 /* Шрифт 1 */
-.unbounded-font, h1 { 
+.unbounded-font, 
+h1 { 
     font-family: "Unbounded", serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -19,7 +20,8 @@
 }  
 
 /* Шрифт 2 */
-.inter-tight-font, p {
+.inter-tight-font, 
+p {
     font-family: "Inter Tight", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -31,8 +33,8 @@ h1 {
 }
 
 p {
-    font-size: 14px;
     color: var(--p-color);
+    font-size: 14px;
 }
 
 /* Разноцветный текст */
@@ -47,10 +49,10 @@ p {
 }
 
 .main-page {
+    padding: 48px 95px 0 95px;
     background-image: url(../img/backgroung.svg);
     background-repeat: no-repeat;
     background-size: 100vw;
-    padding: 48px 95px 0 95px;
 }
 
 .main-page__header {
@@ -70,16 +72,16 @@ p {
 }
 
 .logo__heading {
+    margin-left: 11px;
     font-size: 16px;
     font-weight: 600;
-    margin-left: 11px;
 }
 
 .logo__subheading {
+    margin-right: 35px;
+    margin-left: 51px;
     font-size: 10px;
     font-weight: 600;
-    margin-left: 51px;
-    margin-right: 35px;
 }
 
 .header__menu {
@@ -89,30 +91,29 @@ p {
 }
 
 .menu__row {
-    height: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 50%;
 }
 
 .row__cell {
-    border-right: 2px solid var(--white);
-    border-bottom: 2px solid var(--white);
+    align-content: center;
     width: 100%;
     height: 100%;
+    border-right: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
     text-align: center;
-    align-content: center;
-    font-weight: 500;
     text-transform: uppercase;
     font-size: 12px;
+    font-weight: 500;
 }
 
 .main-page__realtime {
-    margin-top: 223px;
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
     align-items: center;
     justify-content: start;
+    margin-top: 223px;
 }
 
 .realtime__year {
@@ -121,23 +122,23 @@ p {
 }
 
 .realtime__heading{
-    font-size: 12px;
     margin-left: 25px;
+    font-size: 12px;
 }
 
 .main-page__headline {
-    margin-top: 49px;
-    margin-bottom: 92px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-top: 49px;
+    margin-bottom: 92px;
 }
 
 .phrase__decoration {
+    margin-bottom: -30px;
+    text-align: end;
     font-size: 48px;
     letter-spacing: -10px;
-    text-align: end;
-    margin-bottom: -30px;
 }
 
 .headline__invocation {
@@ -147,9 +148,9 @@ p {
 }
 
 .incovation__heading {
+    margin-left: -106px;
     font-weight: 400;
     font-size: 16px;
-    margin-left: -106px;
 }
 
 .headline__info {
@@ -161,14 +162,14 @@ p {
 }
 
 .main-page__values {
-    height: 192px;
-    width: 100%;
-    background-color: var(--black);
-    opacity: 0.7;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 192px;
+    width: 100%;
+    background-color: var(--black);
+    opacity: 0.7;
 }
 
 .values__list {
@@ -176,37 +177,37 @@ p {
 }
 
 .list__heading {
+    margin-bottom: 24px;
     font-weight: 400;
     font-size: 15px;
-    margin-bottom: 24px;
 }
 
 .about-company {
-    background-color: var(--grey);
-    padding: 104px 96px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    padding: 104px 96px;
+    background-color: var(--grey);
 }
 
 .founded__subheading {
-    font-size: 12px;
     margin-bottom: 39px;
+    font-size: 12px;
 }
 
 .founded__decoration {
+    text-align: start;
     margin: 13px 0 122px 0;
     font-size: 48px;
     letter-spacing: -10px;
-    text-align: start;
 }
 
 .about-company__description {
-    height: 458px;
-    width: 430px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 458px;
+    width: 430px;
     margin-left: -288px;
 }
 
@@ -220,10 +221,10 @@ p {
 }
 
 .sphere__box {
-    background-color: var(--box-color);
+    justify-items: center;
     width: 238px;
     height: 276px;
-    justify-items: center;
+    background-color: var(--box-color);
 }
 
 .box__img {
@@ -232,18 +233,19 @@ p {
 }
 
 .complete-goal {
-    padding: 54px 96px;
-    background-color: var(--grey);
     display: flex;
     flex-wrap: wrap;
+    padding: 54px 96px;
+    background-color: var(--grey);
 }
 
 div[class^=complete-goal__step] {
+    align-content: flex-end;
     width: 50%;
     height: 289px;
-    box-sizing: border-box;
     padding: 48px;
-    align-content: flex-end;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
 }
 
 .complete-goal__step-01 {
@@ -268,8 +270,8 @@ div[class^=complete-goal__step] {
 }
 
 .step__paragraph {
-    margin-top: 38px;
     width: 276px;
+    margin-top: 38px;
 }
 
 .achive {
@@ -289,13 +291,18 @@ div[class^=complete-goal__step] {
 }
 
 .objectives__aside {
-    display: grid;
-    align-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 336px;
 }
 
 .aside__year {
     font-size: 12px;
+}
+
+.aside__img {
+    width: 29px;
 }
 
 .objectives__solution {
@@ -309,8 +316,8 @@ div[class^=complete-goal__step] {
 }
 
 .details__paragaph-left {
-    margin-right: 100px;
     min-width: 373px;
+    margin-right: 100px;
 }
 
 .solution__table {
@@ -321,16 +328,16 @@ div[class^=complete-goal__step] {
 }
 
 .row__sphere {
-    height: 145px;
-    border: 2px solid var(--white);
-    padding-left: 50px;
     vertical-align: middle;
+    height: 145px;
+    padding-left: 50px;
+    border: 2px solid var(--white);
 }
 
 .row__explanation {
-    border: 2px solid var(--white);
-    padding: 36px 50px 50px 50px;
     vertical-align: middle;
+    padding: 36px 50px 50px 50px;
+    border: 2px solid var(--white);
 }
 
 .explanation__heading {
@@ -339,15 +346,16 @@ div[class^=complete-goal__step] {
 }
 
 .achive__summary {
-    margin-left: 336px;
     width: 40%;
+    margin-left: 336px;
 }
 
 .final {
-    background-image: url(../img/final_back.svg);
-    background-repeat: no-repeat;
     padding: 84px 178px 64px 94px;
     box-sizing: border-box;
+    background-image: url(../img/final_back.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .final__subheading {
@@ -355,10 +363,10 @@ div[class^=complete-goal__step] {
 }
 
 .final__wishes {
-    margin-top: 299px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-top: 299px;
 }
 
 .benefits__decoration {
@@ -375,9 +383,9 @@ div[class^=complete-goal__step] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--grey);
     height: 150px;
     padding: 0 64px;
+    background-color: var(--grey);
 }
 
 .contact-us__chat {
@@ -393,6 +401,6 @@ div[class^=complete-goal__step] {
 }
 
 .choose__img {
-    width: 20px;
     margin-right: 20px;
+    width: 20px;
 }
