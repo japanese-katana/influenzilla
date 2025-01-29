@@ -77,10 +77,6 @@
         padding: 42px 65px 32px 40px;
     }
     
-    .final__subheading {
-        font-size: 6px;
-    }
-    
     .final__wishes {
         margin-top: 150px;
     }
@@ -108,6 +104,30 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 380px) {
+    .final {
+        padding: 48px 20px 61px 20px;
+    }
 
+    .final__wishes {
+        display: block;
+    }
+
+    .wishes__paragraph {
+        width: auto;
+        margin-top: 32px;
+    }
+
+    .contact-us {
+        justify-content: space-between;
+    }
+
+    .contact-us__chat {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .chat__choose {
+        align-self: start;
+    }
 }

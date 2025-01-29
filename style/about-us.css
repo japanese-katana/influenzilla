@@ -13,6 +13,10 @@
     background-color: var(--grey);
 }
 
+.mob-visible {
+    display: none;
+}
+
 .founded__subheading {
     margin-bottom: 39px;
     font-size: 12px;
@@ -89,6 +93,7 @@ div[class^=complete-goal__step] {
     height: 289px;
     padding: 48px;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .complete-goal__step-01 {
@@ -214,7 +219,6 @@ div[class^=complete-goal__step] {
 
     .founded__subheading {
         margin-bottom: 39px;
-        font-size: 12px;
     }
 
     .founded__decoration {
@@ -238,10 +242,6 @@ div[class^=complete-goal__step] {
     div[class^=complete-goal__step] {
         height: 180px;
         padding: 24px;
-    }
-
-    .step__heading {
-        font-size: 20px;
     }
 
     .step__paragraph {
@@ -292,7 +292,6 @@ div[class^=complete-goal__step] {
     
     .explanation__heading {
         margin-bottom: 9px;
-        font-size: 15px;
     }
     
     .achive__summary {
@@ -300,6 +299,83 @@ div[class^=complete-goal__step] {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 380px) {
+    .about-company {
+        align-items: flex-start;
+        padding: 62px 20px 84px 20px;
+    }
 
+    .mob-visible {
+        display: block;
+    }
+
+    .founded__subheading {
+        margin-top: 198px;
+        margin-bottom: 25px;
+    }
+
+    .founded__decoration {
+        margin-bottom: 200px;
+    }
+
+    .mob-hidden {
+        display: none;
+    }
+
+    .about-company__description {
+        position: absolute;
+        width: auto;
+        height: 587px;
+        margin: 44px 20px 0 0;
+    }
+
+    .complete-goal {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    div[class^=complete-goal__step] {
+        width: 100%;
+    }
+
+    .step__paragraph {
+        margin-top: 41px;
+    }
+
+    .achive {
+        padding: 74px 20px 85px 20px;
+    }
+
+    .achive__decoration {
+        margin-top: 44px;
+        margin-left: 162px;
+    }
+
+    .objectives__aside {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* height: 1336px; */
+        margin-top: -235px;
+    }
+
+    .objectives__solution {
+        width: 100%;
+    }
+
+    .solution__table {
+        display: none;
+    }
+
+    .details__paragaph {
+        display: none;
+    }
+
+    .achive__summary {
+        display: block;
+        width: auto;
+        margin-left: 0;
+    }
 }
