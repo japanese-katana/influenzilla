@@ -76,7 +76,7 @@
     height: 200px;
 }
 
-.complete-goal {
+.four-card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -86,7 +86,7 @@
     background-color: var(--grey);
 }
 
-div[class^=complete-goal__step] {
+.four-card__item {
     -ms-flex-line-pack: end;
         align-content: flex-end;
     width: 50%;
@@ -97,32 +97,32 @@ div[class^=complete-goal__step] {
     opacity: 30%;
 }
 
-div[class^=complete-goal__step]:hover {
+.four-card__item:hover {
     opacity: 100%;
 }
 
-.complete-goal__step-01 {
+.four-card__item[data-item="1"] {
     background-image: url(../img/background-01.svg);
 }
 
-.complete-goal__step-02 {
+.four-card__item[data-item="2"]  {
     background-image: url(../img/background-02.svg);
 }
 
-.complete-goal__step-03 {
+.four-card__item[data-item="3"]  {
     background-image: url(../img/background-03.svg);
 }
 
-.complete-goal__step-04 {
+.four-card__item[data-item="4"] {
     background-image: url(../img/background-04.svg);
 }
 
-.step__heading {
+.four-card__heading {
     font-size: 40px;
     font-weight: 300;
 }
 
-.step__paragraph {
+.four-card__paragraph {
     width: 276px;
     margin-top: 38px;
 }
@@ -240,16 +240,16 @@ div[class^=complete-goal__step]:hover {
         display: none;
     }
 
-    .complete-goal {
+    .four-card {
         padding: 26px 46px;
     }
 
-    div[class^=complete-goal__step] {
+    .four-card__item {
         height: 180px;
         padding: 24px;
     }
 
-    .step__paragraph {
+    .four-card__paragraph {
         margin-top: 19px;
         width: auto;
     }
@@ -334,17 +334,17 @@ div[class^=complete-goal__step]:hover {
         margin: 44px 20px 0 0;
     }
 
-    .complete-goal {
+    .four-card {
         display: block;
         width: 100%;
         padding: 0;
     }
 
-    div[class^=complete-goal__step] {
+    .four-card__item {
         width: 100%;
     }
 
-    .step__paragraph {
+    .four-card__paragraph {
         margin-top: 41px;
     }
 
