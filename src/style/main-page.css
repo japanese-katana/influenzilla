@@ -1,110 +1,28 @@
 .main-page {
-    padding: 48px 95px 0 95px;
+    padding: 0 95px;
     background-image: url(../img/backgroung.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.main-page__header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-    height: 134px;
-}
-
-.header__logo { 
-    display: -webkit-box; 
-    display: -ms-flexbox; 
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0 56px 0 31px;
-    border: 2px solid var(--white);
-}
-
-.logo__heading {
-    margin-left: 11px;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.logo__subheading {
-    margin-left: 51px;
-    font-size: 10px;
-    font-weight: 600;
-}
-
-.header__menu {
-    width: 100%;
-    max-width: 817px;
-    height: 134px;
-    border-top: 2px solid var(--white);
-}
-
-.menu__row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    height: 50%;
-}
-
-.row__cell {
-    -ms-flex-line-pack: center;
-        align-content: center;
-    width: 100%;
-    height: 100%;
-    border-right: 2px solid var(--white);
-    border-bottom: 2px solid var(--white);
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 500;
-}
-
-.row__cell:hover {
-    font-size: 15px;
-    letter-spacing: 3px;
+.header {
+    position: absolute;
+    margin-top: 48px;
+    padding: 0 95px;
 }
 
 .main-page__realtime {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    margin-top: 223px;
+    padding-top: 405px;
 }
 
 .realtime__year {
+    margin-right: 25px;
     font-weight: 200;
     font-size: 27px;
 }
 
 .realtime__heading {
-    margin-left: 25px;
     font-size: 12px;
 }
 
@@ -190,28 +108,20 @@
 
 @media (max-width: 768px) {
     .main-page {
-        padding: 24px 40px 0 40px;
+        padding: 0 40px;
     }
 
-    .main-page__header {
-        height: 60px;
+    .header {
+        margin-top: 24px;
+        padding: 0 40px;
     }
 
-    .header__logo {
-        padding: 10px 15px;
-    }
-
-    .logo__subheading,
     .incovation__heading {
         display: none;
     }
 
-    .header__menu {
-        height: 60px;
-    }
-
     .main-page__realtime {
-        margin-top: 100px;
+        padding-top: 184px;
     }
 
     .main-page__headline {
@@ -224,6 +134,7 @@
     }
 
     .main-page__values {
+        align-items: flex-end;
         gap: 40px;
         height: 70px;
         margin-top: -70px;    
@@ -237,37 +148,17 @@
 
 @media (max-width: 380px) {
     .main-page {
-        padding: 30px 20px 0 20px;
+        padding: 0 20px;
     }
 
-    .main-page__header {
-        height: 60px;
-    }
-
-    .header__logo { 
-        padding: 13px 30px;
-    }
-
-    .header__menu::after {
-        content: 'menu';
-        display: block;
-        align-content: center;
-        text-align: center;
-        height: 100%;
-        box-sizing: border-box;
-        border-right: 2px solid var(--white);
-        border-bottom: 2px solid var(--white);
-        color: var(--white);
-        text-transform: uppercase;
-    }
-
-    .menu__row {
-        display: none;
+    .header {
+        margin-top: 30px;
+        padding: 0 20px;
     }
 
     .main-page__realtime {
         justify-content: end;
-        margin-top: 78px;
+        padding-top: 168px;
     }
 
     .main-page__headline {

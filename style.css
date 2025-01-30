@@ -1,5 +1,9 @@
+/* global */
 @import url(./src/style/reset.css);
-@import url(./src/style/variables.css);
+@import url(./src/style/global.css);
+/* slide of page */
+@import url(./src/style/header.css);
 @import url(./src/style/main-page.css);
 @import url(./src/style/about-us.css);       
-@import url(./src/style/contact-us.css);
+@import url(./src/style/final-slide.css);
+@import url(./src/style/footer.css);
