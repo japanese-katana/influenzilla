@@ -80,6 +80,11 @@
     font-weight: 500;
 }
 
+.row__cell:hover {
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
 .main-page__realtime {
     display: -webkit-box;
     display: -ms-flexbox;
