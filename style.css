@@ -1,0 +1,5 @@
+@import url(./src/style/reset.css);
+@import url(./src/style/variables.css);
+@import url(./src/style/main-page.css);
+@import url(./src/style/about-us.css);       
+@import url(./src/style/contact-us.css);

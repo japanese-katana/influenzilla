@@ -94,6 +94,11 @@ div[class^=complete-goal__step] {
     padding: 48px;
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 30%;
+}
+
+div[class^=complete-goal__step]:hover {
+    opacity: 100%;
 }
 
 .complete-goal__step-01 {
