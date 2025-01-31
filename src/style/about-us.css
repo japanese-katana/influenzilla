@@ -366,6 +366,10 @@
         margin-top: -235px;
     }
 
+    .aside__img {
+        margin-top: 5px;
+    }
+
     .objectives__solution {
         width: 100%;
     }
