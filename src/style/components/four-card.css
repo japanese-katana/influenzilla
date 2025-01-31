@@ -1,0 +1,82 @@
+.four-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 54px 96px;
+    background-color: var(--grey);
+}
+
+.four-card__item {
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+    width: 50%;
+    height: 289px;
+    padding: 48px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 30%;
+}
+
+.four-card__item:hover {
+    opacity: 100%;
+}
+
+.four-card__item[data-item="1"] {
+    background-image: url(../../img/background-01.svg);
+}
+
+.four-card__item[data-item="2"]  {
+    background-image: url(../../img/background-02.svg);
+}
+
+.four-card__item[data-item="3"]  {
+    background-image: url(../../img/background-03.svg);
+}
+
+.four-card__item[data-item="4"] {
+    background-image: url(../../img/background-04.svg);
+}
+
+.four-card__heading {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.four-card__paragraph {
+    width: 276px;
+    margin-top: 38px;
+}
+
+@media (max-width: 768px) {
+    .four-card {
+        padding: 26px 46px;
+    }
+
+    .four-card__item {
+        height: 180px;
+        padding: 24px;
+    }
+
+    .four-card__paragraph {
+        margin-top: 19px;
+        width: auto;
+    }
+}
+
+@media (max-width: 380px) {
+    .four-card {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    .four-card__item {
+        width: 100%;
+    }
+
+    .four-card__paragraph {
+        margin-top: 41px;
+    }
+}

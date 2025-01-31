@@ -1,9 +1,12 @@
 /* global */
-@import url(./src/style/reset.css);
-@import url(./src/style/global.css);
-/* slide of page */
-@import url(./src/style/header.css);
-@import url(./src/style/main-page.css);
-@import url(./src/style/about-us.css);       
-@import url(./src/style/final-slide.css);
-@import url(./src/style/footer.css);
+@import url(./src/style/global/reset.css);
+@import url(./src/style/global/global.css);
+/* components */
+@import url(./src/style/components/header.css);
+@import url(./src/style/components/first-slide.css);
+@import url(./src/style/components/line-list.css);
+@import url(./src/style/components/four-card.css);
+@import url(./src/style/components/final-slide.css);
+@import url(./src/style/components/footer.css);
+/* pages */
+@import url(./src/style/pages/home.css);
